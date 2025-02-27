@@ -48,6 +48,9 @@
     - [2. ResNet Model 🥅](#2-resnet-model-)
       - [Classification Report ℹ️](#classification-report-)
       - [Error Analysis ⚠️](#error-analysis-)
+    - [3. CNN Ensemble 🤝](#3-cnn-ensemble-)
+      - [Classification Report ℹ️](#classification-report-)
+      - [Error Analysis ⚠️](#error-analysis-)
   - [Acknowledgments 💝](#acknowledgments-)
 
 </details>
@@ -91,7 +94,7 @@ weighted avg       0.42      0.36      0.32      2400
 
 #### Error Analysis ⚠️
 
-<img src="https://github.com//SenaThenu/geo-classifier/blob/main/assets/vanilla_cnn_performance.png?raw=true" alt="Repo Logo" width="100%">
+<img src="https://github.com//SenaThenu/geo-classifier/blob/main/assets/vanilla_cnn_performance.png?raw=true" alt="Error analysis illustration of the vanilla CNN model" width="100%">
 
 
 ### 2. ResNet Model 🥅
@@ -115,8 +118,33 @@ weighted avg       0.91      0.91      0.91      2400
 
 #### Error Analysis ⚠️
 
-<img src="https://github.com//SenaThenu/geo-classifier/blob/main/assets/resnet_model_performance.png?raw=true" alt="Repo Logo" width="100%">
+<img src="https://github.com//SenaThenu/geo-classifier/blob/main/assets/resnet_model_performance.png?raw=true" alt="Error analysis illustration of the ResNet model" width="100%">
 
+
+### 3. CNN Ensemble 🤝
+
+The best-performing CNN model from a CNN model ensemble is chosen. The following statistics are based on that!
+
+#### Classification Report ℹ️
+```
+Classification Report:
+              precision    recall  f1-score   support
+
+   buildings       0.43      0.77      0.55       364
+      forest       0.78      0.89      0.83       374
+     glacier       0.71      0.58      0.64       440
+    mountain       0.58      0.62      0.60       413
+         sea       0.70      0.46      0.55       423
+      street       0.81      0.53      0.64       386
+
+    accuracy                           0.63      2400
+   macro avg       0.67      0.64      0.64      2400
+weighted avg       0.67      0.63      0.63      2400
+```
+
+#### Error Analysis ⚠️
+
+<img src="https://github.com//SenaThenu/geo-classifier/blob/main/assets/best_cnn_performance.png?raw=true" alt="Repo Logo" width="100%">
 
 ## Acknowledgments 💝
 
